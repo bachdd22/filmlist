@@ -1,0 +1,25 @@
+version: '3.8'
+
+services:
+  mysql:
+    build: ./mysql/
+    restart: always
+    ports:
+      - '3306:3306'
+    volumes:
+    - database:/data/db
+
+  pythonapp:
+    build: ./flask movie app/
+    command: sh -c "sleep 20s ; python app.py"
+    ports:
+      - '5000:7000'
+    depends_on:
+      - mysql
+
+networks:
+  mynetwork:
+    driver: bridge
+
+volumes:
+  database:
