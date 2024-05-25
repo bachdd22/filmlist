@@ -1,0 +1,28 @@
+{% extends "layout.html" %}
+{% block title %}Recommend{%endblock%}
+{% block body %}
+
+<div class="container">
+<div class="movie-list-container">
+    {% for rec in recs %}
+    <h1 class="movie-list-title">Because you liked "{{rec.title}}"</h1>
+            <br>
+            <div class="movie-list-wrapper">
+                <div class="movie-list">
+                    {% for movie in rec.movies %}
+                    {% set movie_link = "/movie/?movie_id=" + movie.id|string %}
+                    <a class="movie-page-view-link" href={{movie_link}}>
+                        <div class="movie-list-item">
+                            <img class="movie-list-item-img" src={{ movie.poster_path }} alt="">
+                            <span class="movie-list-item-title">{{ movie.title[:50] }}</span>                    
+                        </div>
+                    </a>
+                    {% endfor %}
+                </div>
+                <i class="fas fa-chevron-right arrow"></i>
+            </div>
+    {%endfor%}
+</div>
+</div>
+
+{% endblock %}

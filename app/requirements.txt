@@ -1,0 +1,8 @@
+flask
+flask_session
+flask_caching
+requests
+cs50
+werkzeug
+luhnchecker
+mysqlclient
