@@ -68,7 +68,7 @@ Truy cập vào localhost:5000
 
 * Đinh Duy Bách - 22022531
 * Lê Hữu Đức - 22022535
-* Video demo: 
+* Video demo: https://youtu.be/vZnS_37rsZY
   
 
 
