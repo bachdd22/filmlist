@@ -28,16 +28,22 @@ Website được xây dựng bằng Flask, CSS, HTML và JavaScript. Trang web g
 pip install -r requirements.txt
 ```
 ### Cấu trúc
+/app
 * /static: các file javascript và css của trang web
 * /templates: các templates HTML
 * app.py: phần code chính xử lý trang web
 * findMovies.py: xử lý tìm kiếm thông tin phim
 * key.py: key API
-* Các file .db là cơ sở dữ liệu của trang web
+* recommend.py: module đề xuất phim theo collaborative filtering với cosine similarity
+/mysql:
+* Cơ sở dữ liệu cho trang web, với MySQL image từ Docker hub
+/test:
+* Các file test
+docker-compose: file docker-compose để đóng gói chương trình
 
 ### Cài đặt
 
-* Clone repository https://github.com/bachdd22/movie-recommendation-system
+* Clone repository https://github.com/bachdd22/filmlist
 * Cài đặt các dependencies.
 
 ### Executing program
@@ -57,7 +63,7 @@ python -m flask run
 
 * Đinh Duy Bách - 22022531
 * Lê Hữu Đức - 22022535
-* Báo cáo và video demo: 
+* Video demo: 
   
 
 
