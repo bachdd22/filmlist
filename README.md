@@ -28,18 +28,18 @@ Website được xây dựng bằng Flask, CSS, HTML và JavaScript. Trang web g
 pip install -r requirements.txt
 ```
 ### Cấu trúc
-/app
+#### /app
 * /static: các file javascript và css của trang web
 * /templates: các templates HTML
 * app.py: phần code chính xử lý trang web
 * findMovies.py: xử lý tìm kiếm thông tin phim
 * key.py: key API
 * recommend.py: module đề xuất phim theo collaborative filtering với cosine similarity
-/mysql:
+#### /mysql:
 * Cơ sở dữ liệu cho trang web, với MySQL image từ Docker hub
-/test:
+#### /test:
 * Các file test
-docker-compose: file docker-compose để đóng gói chương trình
+#### docker-compose: file docker-compose để đóng gói chương trình
 
 ### Cài đặt
 
