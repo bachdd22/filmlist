@@ -56,6 +56,11 @@ hoặc
 ```
 python -m flask run
 ```
+* Với docker:
+```
+docker-compose up -d
+```
+Truy cập vào localhost:5000
 
 
 ## Bài tập lớn CNPM 5/2024
