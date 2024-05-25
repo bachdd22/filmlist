@@ -15,10 +15,10 @@ logging.basicConfig(filename='app.log', level=logging.DEBUG, force=True)
 # Configure app
 app = Flask(__name__)
 
-# db = SQL("mysql://root:hehe@localhost:3306/users")
+db = SQL("mysql://root:hehe@host.docker.internal:3306/users")
 # db.execute("PRAGMA foreign_keys = ON;")
-db = SQL("sqlite:///users.db")
-db.execute("PRAGMA foreign_keys = ON;")
+# db = SQL("sqlite:///users.db")
+# db.execute("PRAGMA foreign_keys = ON;")
 movie_db = SQL("sqlite:///movies.db")
 cache.init_app(app, config={'CACHE_TYPE': 'simple'})
 # Ensure templates are auto-reloaded
